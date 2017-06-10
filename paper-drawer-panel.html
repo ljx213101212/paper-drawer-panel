@@ -534,7 +534,7 @@ Custom property | Description | Default
             this.toggleClass("transition-drawer", true, this.$.drawer);
             this.selected = 'drawer';
           }.bind(this));
-          this.fire('ljg-paper-drawer-open',{pageFrom:'paper-drawer-panel'});
+          this.fire('paper-drawer-open',{pageFrom:'paper-drawer-panel'});
         },
 
         /**
@@ -547,7 +547,7 @@ Custom property | Description | Default
             this.toggleClass("transition-drawer", true, this.$.drawer);
             this.selected = 'main';
           }.bind(this));
-          this.fire('ljg-paper-drawer-close',{pageFrom:'paper-drawer-panel'});
+          this.fire('paper-drawer-close',{pageFrom:'paper-drawer-panel'});
         },
 
         _onTransitionEnd: function (e) {
